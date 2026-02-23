@@ -1,0 +1,6 @@
+CREATE TABLE Departments(
+	[Id]  INT  NOT NULL  PRIMARY KEY IDENTITY,
+	[Financing]  MONEY  NOT NULL   DEFAULT 0
+	CHECK(Financing <= 0),
+	[Name]   NVARCHAR(100)  NOT NULL UNIQUE
+)
